@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Arya — Data Scientist & AI/ML Engineer. Portfolio of machine learning, RAG, and data engineering projects." />
-  <title>Arya · Data Scientist</title>
+  <meta name="description" content="Arya Miryala" />
+  <title>Arya Miryala</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
 
   <!-- ======== NAV ======== -->
   <header class="nav" id="top">
-    <a class="nav__logo" href="#top">arya<span>.</span></a>
+    <a class="nav__logo" href="#top">arya.miryala<span>.</span></a>
     <nav class="nav__links" id="navLinks">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -29,7 +29,7 @@
 
   <!-- ======== SOCIAL RAIL ======== -->
   <aside class="rail rail--left" aria-label="Social links">
-    <a href="amiryala565@gmail.com" aria-label="Email">
+    <a href="mailto:amiryala565@gmail.com" aria-label="Email">
       <svg viewBox="0 0 24 24"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm.6 2 7.4 5.2L19.4 8"/></svg>
     </a>
     <a href="https://www.linkedin.com/in/arya-miryala/" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -50,13 +50,13 @@
         <div class="hero__roles">
           <span class="role" data-active>Data Scientist</span>
           <span class="role">AI/ML Engineer</span>
+          <span class="role">Data Engineer</span>
         </div>
         <p class="hero__blurb">
-          I'm a data scientist based in the Bay Area, working on building ML solutions at T-Mobile.
-          I recently completed my M.S. in Applied Data Science at USC and graduated from UC Santa Cruz with a 
-          bachelors degree in Computer Science. I love
-          building systems where data actually does something — retrieval-augmented
-          assistants, NLP pipelines, and models that ship.
+          I’m a data scientist based in the Bay Area, engineering production-level machine learning pipelines at T-Mobile. 
+          With an M.S. in Applied Data Science from USC and a B.S. in Computer Science from UC Santa Cruz, 
+          I specialize in building systems where data drives real action. 
+          From retrieval-augmented assistants and knowledge graphs to scalable NLP pipelines, my focus is always on developing intelligent models that actually ship.
         </p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="docs/resume.pdf" target="_blank" rel="noopener">Get my resume</a>
@@ -64,7 +64,6 @@
         </div>
       </div>
       <div class="hero__portrait" aria-hidden="true">
-        <!-- Replace with <img src="assets/me.png" alt="Arya"> -->
         <img src="assets/arya.JPG" alt="Arya" style="width:min(320px,80%); border-radius:14px; border:1px solid var(--line);">
       </div>
     </section>
@@ -131,12 +130,20 @@
     <section class="section container" id="projects">
       <h2 class="section__title"><span class="eyebrow mono">&gt;&gt;&gt; projects()</span>Projects</h2>
 
-      <article class="project">
-        <div class="project__media">
-          <!-- Replace with <img src="assets/cinesync.png" alt="CineSync screenshot"> -->
-          <div class="media-placeholder mono">img/cinesync.png</div>
-        </div>
-        <div class="project__body">
+      <div class="projects-grid">
+
+        <article class="card project-card">
+          <h3>SoCal Context-Aware Trip Planner</h3>
+          <p class="mono project__stack">Neo4j · Cypher · Knowledge Graphs · NLP · Streamlit</p>
+          <p>A constraint-aware destination recommender for Southern California powered by a
+          Neo4j knowledge graph (1,400+ locations, 11 semantic types, 17 edge types)
+          </p>
+          <div class="project__links">
+            <a class="btn btn--small" href="https://github.com/aryamiryala/SoCal-Context-Aware-Planner" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
           <h3>CineSync</h3>
           <p class="mono project__stack">RAG · ChromaDB · GPT-4o mini · Python</p>
           <p>A retrieval-augmented compliance assistant for film production. CineSync ingests
@@ -144,100 +151,62 @@
           ChromaDB, and answers production-compliance questions with grounded citations — so
           crews get accurate answers instead of guesswork.</p>
           <div class="project__links">
-            <a class="btn btn--small" href="https://github.com/your-handle/cinesync" target="_blank" rel="noopener">Code</a>
+            <a class="btn btn--small" href="https://github.com/aryamiryala/cinesync" target="_blank" rel="noopener">Code</a>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project project--flip">
-        <div class="project__media">
-          <div class="media-placeholder mono">img/groupchat.png</div>
-        </div>
-        <div class="project__body">
+        <article class="card project-card">
           <h3>AI-Enhanced Group Chat</h3>
           <p class="mono project__stack">Full-stack · Llama 3 · WebSockets · Android TWA</p>
           <p>A real-time group chat application with a self-hosted Llama 3 bot participating in
           conversations, wrapped as an Android Trusted Web Activity. Covers the full stack:
           realtime messaging, model serving, and mobile packaging.</p>
           <div class="project__links">
-            <a class="btn btn--small" href="https://github.com/your-handle/ai-enhanced-groupchat" target="_blank" rel="noopener">Code</a>
+            <a class="btn btn--small" href="https://github.com/aryamiryala/ai-enhanced-groupchat" target="_blank" rel="noopener">Code</a>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project">
-        <div class="project__media">
-          <div class="media-placeholder mono">img/chatdb.png</div>
-        </div>
-        <div class="project__body">
+        <article class="card project-card">
           <h3>ChatDB</h3>
           <p class="mono project__stack">NLP · SQL/NoSQL · Python</p>
           <p>A natural-language-to-database query engine that translates plain-English questions
           into executable queries across relational and NoSQL backends — letting non-technical
           users explore data without writing a line of SQL.</p>
           <div class="project__links">
-            <a class="btn btn--small" href="https://github.com/your-handle/chatdb" target="_blank" rel="noopener">Code</a>
+            <a class="btn btn--small" href="https://github.com/aryamiryala/chatdb" target="_blank" rel="noopener">Code</a>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project project--flip">
-        <div class="project__media">
-          <div class="media-placeholder mono">img/colorizer.png</div>
-        </div>
-        <div class="project__body">
+        <article class="card project-card">
           <h3>Image Colorizer</h3>
           <p class="mono project__stack">Diffusion models · PSNR · SSIM · CIEDE2000</p>
           <p>A diffusion-based image colorization model that brings grayscale photos to life,
           evaluated rigorously with PSNR, SSIM, and CIEDE2000 perceptual color-difference
           metrics rather than eyeballing alone.</p>
           <div class="project__links">
-            <a class="btn btn--small" href="https://github.com/your-handle/image-colorizer" target="_blank" rel="noopener">Code</a>
+            <a class="btn btn--small" href="https://github.com/aryamiryala/image-colorizer" target="_blank" rel="noopener">Code</a>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project">
-        <div class="project__media">
-          <div class="media-placeholder mono">img/doc2vec.png</div>
-        </div>
-        <div class="project__body">
+        <article class="card project-card">
           <h3>Document Embeddings</h3>
           <p class="mono project__stack">Doc2Vec · Word2Vec · K-Means · Reddit data</p>
           <p>A benchmarking study of Doc2Vec vs. Word2Vec document representations on Reddit
           data, using K-Means clustering to compare how well each embedding space separates
           topics in the wild.</p>
           <div class="project__links">
-            <a class="btn btn--small" href="https://github.com/your-handle/document-embeddings" target="_blank" rel="noopener">Code</a>
+            <a class="btn btn--small" href="https://github.com/aryamiryala/document-embeddings" target="_blank" rel="noopener">Code</a>
           </div>
-        </div>
-      </article>
+        </article>
+
+      </div>
     </section>
 
     <!-- ======== CONTACT ======== -->
     <section class="section container" id="contact">
-      <h2 class="section__title"><span class="eyebrow mono">&gt;&gt;&gt; contact()</span>Want To…</h2>
-      <div class="grid-3">
-        <article class="card">
-          <h3>Offer a role?</h3>
-          <p>I'm interested in data science and ML engineering roles where models meet
-          production — RAG systems, NLP, and applied ML at scale. If you have a challenging
-          problem, I'd love to hear about it.</p>
-        </article>
-        <article class="card">
-          <h3>Connect?</h3>
-          <p>Always happy to meet fellow data scientists, engineers, and researchers. Whether
-          it's trading notes on LLM evals or debating embedding models, let's grab a virtual
-          coffee.</p>
-        </article>
-        <article class="card">
-          <h3>Build something?</h3>
-          <p>From natural-language database interfaces to compliance copilots, I like shipping
-          AI that solves a real problem. If you have an idea, let's make it real together.</p>
-        </article>
-      </div>
+      <h2 class="section__title"><span class="eyebrow mono">&gt;&gt;&gt; contact()</span>Contact</h2>
       <div class="contact__actions">
-        <a class="btn btn--primary" href="amiryala565@gmail.com">Email</a>
+        <a class="btn btn--primary" href="mailto:amiryala565@gmail.com">Email</a>
         <a class="btn btn--ghost" href="https://github.com/aryamiryala" target="_blank" rel="noopener">GitHub</a>
         <a class="btn btn--ghost" href="https://www.linkedin.com/in/arya-miryala/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn--ghost" href="docs/resume.pdf" target="_blank" rel="noopener">Resume</a>
